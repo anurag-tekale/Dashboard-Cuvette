@@ -14,16 +14,37 @@ function App() {
   const [percentile, setPercentile] = useState(37);
   const [score, setScore] = useState(7);
 
+  const appBarProps = {
+    orgLogoUrl: "https://cuvette.tech/app/static/media/logo.74bda650.svg",
+    profileImageUrl: "/images/me-org.png",
+    profileName: "Anurag-Tekale",
+  };
+
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
-      <AppBar />
+      <AppBar {...appBarProps} />
       <div style={{ display: "flex" }}>
         <SideBar />
-        <MainBody setModalStatus={setModalStatus} rank={rank} percentile={percentile} score={score} modalStatus={modalStatus}/>
-        <Analysis score={score}/>
+        <MainBody
+          setModalStatus={setModalStatus}
+          rank={rank}
+          percentile={percentile}
+          score={score}
+          modalStatus={modalStatus}
+        />
+        <Analysis score={score} />
       </div>
-      {modalStatus && 
-      <Modal setModalStatus={setModalStatus} rank={rank} percentile={percentile} score={score} setRank={setRank} setPercentile={setPercentile} setScore={setScore}></Modal>}
+      {modalStatus && (
+        <Modal
+          setModalStatus={setModalStatus}
+          rank={rank}
+          percentile={percentile}
+          score={score}
+          setRank={setRank}
+          setPercentile={setPercentile}
+          setScore={setScore}
+        ></Modal>
+      )}
     </div>
   );
 }

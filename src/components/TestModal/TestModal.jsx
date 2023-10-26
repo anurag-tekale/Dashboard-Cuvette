@@ -1,7 +1,7 @@
 import React from "react";
 import "./TestModal.css";
 
-const TestModal = ({setModalStatus}) => {
+const TestModal = ({ setModalStatus }) => {
   return (
     <div className="test-modal">
       <h4 className="test">Skill Test</h4>
@@ -13,7 +13,9 @@ const TestModal = ({setModalStatus}) => {
             Questions: 08 | Duration: 15 mins | Submitted on 5 June 2021
           </h5>
         </div>
-        <button className="btn-01" onClick={()=>setModalStatus(true)}>Update</button>
+        <button className="btn-01" onClick={() => setModalStatus(true)}>
+          Update
+        </button>
       </div>
     </div>
   );

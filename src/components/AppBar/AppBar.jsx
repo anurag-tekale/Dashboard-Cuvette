@@ -1,20 +1,17 @@
 import React from "react";
 import "./AppBar.css";
 
-const AppBar = () => {
+const AppBar = ({ orgLogoUrl, profileImageUrl, profileName }) => {
   return (
     <div className="app-bar">
       <div className="org-name">
-        <img
-          src="https://cuvette.tech/app/static/media/logo.74bda650.svg"
-          alt=""
-        />
+        <img src={orgLogoUrl} alt="Organization Logo" />
       </div>
       <div className="profile-button">
         <div className="profile-image">
-          <img src="/images/me-org.png" alt="Profile" />
+          <img src={profileImageUrl} alt="Profile" />
         </div>
-        <div className="profile-name">Anurag Tekale</div>
+        <div className="profile-name">{profileName}</div>
       </div>
     </div>
   );
