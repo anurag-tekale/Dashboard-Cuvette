@@ -1,0 +1,20 @@
+body {
+  margin: 0px;
+}
+
+@font-face {
+  font-family: "bold";
+  src: local("DMSans-Bold"), url("/fonts/DMSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "medium";
+  src: local("DMSans-Medium"),
+    url("/fonts/DMSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "light";
+  src: local("DMSans-Regular"),
+    url("/fonts/DMSans-Regular.ttf") format("truetype");
+}

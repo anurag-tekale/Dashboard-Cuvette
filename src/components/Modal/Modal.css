@@ -1,0 +1,118 @@
+.modal__inner {
+  position: fixed;
+  width: 100%;
+  max-width: 800px;
+  background-color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  font-family: "light";
+}
+.modal__head {
+  color: #222F3E;
+  font-weight: 700;
+  font-size: 36px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EBF0F5;
+}
+.modal__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.modal__item:first-child {
+  margin-top: 34px;
+}
+.modal__item:last-child {
+  margin-bottom: 32px;
+}
+.modal__item--num {
+  font-size: 15px;
+  color:#fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color: #142683;
+  margin-right: 20px;
+}
+.modal__item--txt {
+  flex: 1;
+}
+.modal__item--input {
+  width: 157px;
+  padding: 9px 19px;
+  border: 1px solid #142683;
+  border-radius: 5px;
+  color: #142683;
+  outline: none;
+  font-weight: bold;
+  font-family: "light";
+}
+.modal__bottom {
+  border-top: 1px solid #EBF0F5;
+  padding-top: 37px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+  gap: 30px;
+}
+.btn-02 {
+  padding: 8px 16px;
+  border: 1px solid #142683;
+  border-radius: 5px;
+  color: #142683;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.2s linear;
+}
+.btn-02:hover {
+  padding: 8px 16px;
+  border: 1px solid #142683;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #142683;
+  font-weight: 700;font-size: 16px;
+}
+.btn-03 {
+  position: relative;
+  padding: 9px 31px 9px 16px;
+  border: 1px solid #142683;
+  background-color: #142683;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.2s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-03::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: url(/images/arrow-right.svg) no-repeat center center;
+}
+.btn-03:hover {
+  position: relative;
+  padding: 9px 31px 9px 16px;
+  border: 1px solid #142683;
+  background-color: #142683;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.2s linear;
+  opacity: 0.8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

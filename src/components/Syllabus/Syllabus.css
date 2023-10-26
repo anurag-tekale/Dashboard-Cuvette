@@ -1,0 +1,95 @@
+.syllabus {
+  font-family: "light";
+  margin-top: 57px;
+  display: block !important;
+  padding: 30px 30px !important;
+}
+.syllabus__ttl {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1E272E;
+  margin-bottom: 20px;
+}
+.syllabus__item {
+  margin-bottom: 25px;
+}
+.syllabus__item:last-child {
+  margin-bottom: 0;
+}
+.syllabus__item--txt {
+  font-weight: 400;
+  font-size: 16px;
+  color: #566474;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.syllabus__item--bar {
+  display: block;
+  width: 197px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: rgba(46, 201, 113, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.syllabus__item--bar span{
+  display: block;
+  width: 197px;
+  height: 10px;
+  border-radius: 100px;
+  background-color: #2EC971;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+
+}
+.syllabus__item--data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.syllabus__item--text {
+  font-weight: 700;
+  font-size: 16px;
+}
+.syllabus__item:nth-child(1) .syllabus__item--bar {
+  background-color: rgba(67, 138, 246, 0.1);
+}
+.syllabus__item:nth-child(1) .syllabus__item--bar span{
+  background-color: #438AF6;
+}
+.syllabus__item:nth-child(1) .syllabus__item--text{
+  color: #438AF6;
+}
+
+.syllabus__item:nth-child(2) .syllabus__item--bar {
+  background-color: rgba(255, 145, 66, 0.1);
+}
+.syllabus__item:nth-child(2) .syllabus__item--bar span{
+  background-color: #FF9142;
+}
+.syllabus__item:nth-child(2) .syllabus__item--text{
+  color: #FF9142;
+}
+
+.syllabus__item:nth-child(3) .syllabus__item--bar {
+  background-color: rgba(250, 94, 94, 0.1);
+}
+.syllabus__item:nth-child(3) .syllabus__item--bar span{
+  background-color: #FB5E5E;
+}
+.syllabus__item:nth-child(3) .syllabus__item--text{
+  color: #FB5E5E;
+}
+
+.syllabus__item:nth-child(4) .syllabus__item--bar {
+  background-color: rgba(46, 201, 113, 0.1);
+}
+.syllabus__item:nth-child(4) .syllabus__item--bar span{
+  background-color: #2EC971;
+}
+.syllabus__item:nth-child(4) .syllabus__item--text{
+  color: #2EC971;
+}

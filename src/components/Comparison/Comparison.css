@@ -1,0 +1,130 @@
+.comparison {
+    margin-top: 30px;
+    margin-left: 30px;
+    display: block;
+    font-family: "light";
+    padding: 20px 30px;
+    margin-bottom: 100px;
+}
+.comparison__ttl {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1E272E;
+    margin-bottom: 20px;
+}
+.comparison__txt p {
+    font-size: 14px;
+    color: #566474;
+}
+.comparison__txt {
+    position: relative;
+    margin-bottom: 30px;
+}
+.comparison__txt .comparison__img {
+    position: absolute;
+    right: 0;
+    top: -27px;
+}
+.chart-body {
+    background-color: #1E272E;
+    color: #fff;
+    font-family: "light";
+    padding: 15px 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.chart-body::after {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #1E272E;
+}
+.chart-body__ttl {
+    margin: 0;
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 3px;
+    color: #fff;
+    white-space: nowrap;
+}
+.chart-body__txt {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255, 255,255, 0.7);
+    margin: 0;
+    white-space: nowrap;
+}
+#chartjs-tooltip {
+    pointer-events: none;
+    transform: translateY(-50%) translateX(10px);
+}
+.comparison__big-chart canvas {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+.comparison__big-chart {
+    position: relative;
+    overflow: hidden;
+}
+.chart-bg-1 {
+    position: absolute;
+    top: 0;
+    bottom: 30px;
+    left: 8px;
+    width: 196px;
+    background-color: rgba(67, 138, 246, 0.1);
+    pointer-events: none;
+}
+.chart-bg-1::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(calc(50% - 4px));
+    width: 2px;
+    border-right: 2px dashed #438AF6;
+}
+.chart-bg-2 {
+    position: absolute;
+    top: 0;
+    bottom: 30px;
+    right: 0;
+    width: 160px;
+    pointer-events: none;
+}
+.chart-bg-2::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(calc(50% - 9px));
+    width: 2px;
+    border-right: 2px dashed #FF9142;
+}
+.chart-bg-2::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF9142;
+    top: 30px;
+    left: 50%;
+    transform: translateX(calc(50% - 14px));
+}
+.point-blue {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #438AF6;
+    border-radius: 50%;
+    pointer-events: none;
+    bottom: calc(10px / 120 * 283 + 25px);
+}

@@ -1,0 +1,82 @@
+.question {
+  font-family: "light";
+  display: block !important;
+  padding: 30px 30px !important;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.question__head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.question__head span{
+  color: #438AF6;
+  font-size: 16px;
+  font-weight: 700;
+}
+.question__ttl {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1E272E;
+  margin: 0;
+}
+.question__txt {
+  font-size: 14px;
+  font-weight: 400;
+  color: #566474;
+}
+.question__txt b{
+  font-weight: 700;
+}
+.pipe-chart {
+  margin-top: 48px;
+  width: 170px;
+  height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.pipe-chart img {
+  position: absolute;
+  top: calc(50% - 6px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pipe-chart .outer{
+  width: 170px;
+  height: 170px;
+  padding: 25px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-color: rgba(67, 138, 246, 0.1);
+}
+.pipe-chart .inner{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset;
+  background-color: #fff;
+}
+.pipe-chart svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+.pipe-chart circle {
+  fill: none;
+  stroke: #438AF6;
+  stroke-width: 30px;
+  stroke-dasharray: 450;
+  /* stroke-dashoffset: 450; */
+  animation: anim 2s linear forwards;
+}
+@keyframes anim {
+  0% {
+    stroke-dashoffset: 450;
+  }
+  /* 100% {
+    stroke-dashoffset: 0;
+  } */
+}

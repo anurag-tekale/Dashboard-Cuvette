@@ -1,0 +1,15 @@
+.btn-01 {
+    color: #FFFFFF;
+    padding: 8px 35px;
+    font-size: 14px;
+    line-height: 2;
+    font-weight: 700;
+    background-color: #142683;
+    border-radius: 5px;
+    height: fit-content;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.btn-01:hover {
+    opacity: 0.8;
+}
